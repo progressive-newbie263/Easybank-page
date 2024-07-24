@@ -1,0 +1,126 @@
+footer {
+  background: hsl(233, 26%, 24%);;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px var(--px);
+}
+
+.footer-brand {
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.social-link {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.social-link ion-icon {
+  color: hsl(0, 0%, 100%);;
+  font-size: 30px;
+  display: block;
+  transition: 0.25s ease;
+}
+
+.social-link ion-icon:hover { 
+  color: hsl(136, 65%, 51%);
+  /* effects for hovering the social media icon: 
+    - padding for the small position vibration  
+    - scale 1.4 for bigger icon ( a zoom-in technique)
+    - transition 0.25s ease-in-out for creating a slight delay
+  */
+  padding: 0px 3px;
+  transform: scale(1.4);
+  transition: transform 0.25s ease-in-out;
+}
+
+.footer-nav { 
+  margin-bottom: 30px; 
+}
+
+.footer-nav ul, .footer-nav ul li:not(:last-child) {
+  margin-bottom: 15px; 
+}
+
+.footer-nav a {
+  color: hsl(0, 0%, 98%);
+  font-size: 15px;
+  transition: 0.25s ease;
+}
+
+.footer-nav a:hover { 
+  color: hsl(136, 65%, 51%); 
+}
+
+footer .request-button { 
+  margin-bottom: 30px; 
+}
+
+.copyright {
+  color: hsl(233, 8%, 62%);
+  font-size: 14px;
+}
+
+
+/* media queries: */
+@media (min-width: 768px) {
+  :root { 
+    --px: 80px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 50px var(--px);
+  }
+
+  footer .wrapper-flex {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-brand {
+    margin: 0;
+    margin-bottom: 50px;
+  }
+
+  .social-link {
+    gap: 12px;
+    margin-bottom: 0;
+  }
+
+  .social-link ion-icon { 
+    font-size: 22px;
+   }
+
+  .footer-nav {
+    margin-bottom: 0;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-nav ul { 
+    margin-bottom: 0; 
+  }
+
+  footer .request-button { 
+    margin-left: auto; 
+  }
+}
+
+
+@media (min-width: 1200px) {
+  :root { 
+    --px: 160px; 
+  }
+}
