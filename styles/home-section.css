@@ -13,12 +13,14 @@ main {
   background-size: cover;
   padding: 0 15px;
   margin-bottom: 40px;
+  z-index: 100;
 }
 
 .home-img-box .home-img {
   aspect-ratio: 1/1;
   object-fit: cover;
   object-position: bottom;
+  z-index: 200;
 }
 
 .home-title {
@@ -65,6 +67,7 @@ main {
   .home-img-box {
     width: 55%;
     background: url(/images/bg-intro-desktop.svg) no-repeat bottom left;
+    z-index: 100;
     background-size: 150%;
     margin:  0;
     padding: 0;
